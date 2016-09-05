@@ -1,0 +1,18 @@
+{
+  "name": "js-cars",
+  "version": "1.0.0",
+  "description": "A small car game written in JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "pixi.js": "^4.0.0"
+  },
+  "devDependencies": {
+    "browserify-livereload": "^1.0.8",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "start": "watchify index.js -p [ browserify-livereload --host 127.0.0.1 --port 1337 ] -o bundle.js -v"
+  },
+  "author": "Pepe Becker <mail@pepebecker.com>",
+  "license": "MIT"
+}
