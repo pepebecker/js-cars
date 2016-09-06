@@ -7,11 +7,16 @@
     "pixi.js": "^4.0.0"
   },
   "devDependencies": {
+    "browserify": "^13.1.0",
     "browserify-livereload": "^1.0.8",
+    "uglifyjs": "^2.4.10",
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "start": "watchify index.js -p [ browserify-livereload --host 127.0.0.1 --port 1337 ] -o bundle.js -v"
+    "start": "watchify index.js -p [ browserify-livereload --host 127.0.0.1 --port 1337 ] -o bundle.js -v",
+    "bundle": "browserify index.js > bundle.js",
+    "uglify": "uglifyjs -mc --screw-ie8 -- bundle.js > bundle.min.js",
+    "build": "npm run bundle && npm run uglify"
   },
   "author": "Pepe Becker <mail@pepebecker.com>",
   "license": "MIT"
