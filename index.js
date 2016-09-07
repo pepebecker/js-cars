@@ -23,7 +23,8 @@ pixi.loader.add([
 	'resources/car-blue.png',
 	'resources/car-brown.png',
 	'resources/car-green.png',
-	'resources/car-red.png'
+	'resources/car-red.png',
+	'resources/explosion.png'
 ]).load(setup)
 
 function radian (x) {
