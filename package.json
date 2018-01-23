@@ -7,7 +7,7 @@
     "pixi.js": "^4.0.0"
   },
   "devDependencies": {
-    "browserify": "^13.1.0",
+    "browserify": "^15.2.0",
     "browserify-livereload": "^1.0.8",
     "uglifyjs": "^2.4.10",
     "watchify": "^3.7.0"
